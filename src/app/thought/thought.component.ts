@@ -9,8 +9,7 @@ import { Thought } from '../thought'
 export class ThoughtComponent implements OnInit {
 
   thoughts: Thought[] =[
-    new Thought(1, 'a', 'z', new Date(2020,7,13)),
-    new Thought (2, 'b', 'y', new Date(2020,7,13)),
+    
   ];
 
 
