@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <h2 class="text-center">Open up</h2>
+    <hr>
+    <form (ngSubmit)='submitThought()' #thoughtForm='ngForm'>
+        <div class="form-group">
+            <label for="title">Thought</label>
+            <input type="text"  class="form-control" placeholder="what's on your mind..." id="title" [(ngModel)]="newThought.title" name="title" #title='ngModel' required>
+
+        </div>
+
+        <div class="form-group">
+            <label for="description">Elaborate</label>
+            <textarea class="form-control" placeholder="tell us more..." id="description" rows="4" [(ngModel)]="newThought.description" name="description" #description="ngModel" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="entry">Date</label>
+            <input type="date" id="entry" [(ngModel)]="newThought.entryDate" name="entryDate" #entryDate="ngModel" required>
+        </div>
+        <button type="submit" class="btn btn-success">Add thought</button>
+    </form>
+</div>
